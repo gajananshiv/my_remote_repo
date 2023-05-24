@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{%extends 'testapp/base.html'%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>insert page</title>
+</head>
+<body>
+{%block body_block%}
+<h1>Employee insert Form</h1>
+<form method="post">
+    <table border="1">
+    {{form.as_p}}
+    {%csrf_token%}
+    </table>
+        <br>
+    <input type="submit" class="btn btn-success " name="" value="Insert Record">
+</form>
+
+{%endblock%}
+
+</body>
+</html>
